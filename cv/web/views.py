@@ -93,7 +93,7 @@ CONTENT = [
         "what": "Създава текущото CV",
         "when": "2024",
         "where": "Проектът в GitHub",
-        "link": "#",
+        "link": "https://github.com/gvkunchev/web_cv",
         "category": "personal"
     },
 ]
