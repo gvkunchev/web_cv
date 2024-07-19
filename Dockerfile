@@ -13,7 +13,7 @@ COPY requirements.txt .
 RUN pip3 install --break-system-packages -r requirements.txt
 
 # Copy the Django project
-COPY pigs /var/cv
+COPY cv /var/cv
 
 # Prepare Apache
 ADD apache.conf /etc/apache2/sites-available/000-default.conf
