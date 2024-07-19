@@ -83,7 +83,7 @@ CONTENT = [
         "category": "professional"
     },
     {
-        "what": "Създава сайтa за курса по Python във ФМИ<br/><i class='small'>(Python, Django, jQuery, Bootstrap, PostgreSQL, Celery, Docker)</i>",
+        "what": "Създава сайт за курса по Python във ФМИ<br/><i class='small'>(Python, Django, jQuery, Bootstrap, PostgreSQL, Celery, Docker)</i>",
         "when": "2023",
         "where": "Проектът в GitHub",
         "link": "https://github.com/gvkunchev/shrubbery",
