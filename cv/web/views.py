@@ -56,7 +56,7 @@ CONTENT = [
     },
     {
         "what": "Получава приз MVP на фирмата",
-        "when": "2005",
+        "when": "2012",
         "where": "\"Брайт Маркетинг Рисърч\" София",
         "link": "https://bright-research.com/",
         "category": "professional"
@@ -83,7 +83,7 @@ CONTENT = [
         "category": "professional"
     },
     {
-        "what": "Създава сайтът за курса по Python във ФМИ<br/><i class='small'>(Python, Django, jQuery, Bootstrap, PostgreSQL, Celery, Docker)</i>",
+        "what": "Създава сайтa за курса по Python във ФМИ<br/><i class='small'>(Python, Django, jQuery, Bootstrap, PostgreSQL, Celery, Docker)</i>",
         "when": "2023",
         "where": "Проектът в GitHub",
         "link": "https://github.com/gvkunchev/shrubbery",
