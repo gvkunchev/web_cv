@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd /var/cv
+python3 /var/cv/manage.py migrate
+python3 /var/cv/manage.py collectstatic --noinput --clear
+apache2ctl -D FOREGROUND
