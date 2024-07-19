@@ -6,6 +6,10 @@
     max-width: 40em;
 }
 
+#summary {
+    max-width: 40em;
+}
+
 #timeline {
     width: 0.4em;
     margin-left: -0.2em; /* Half of the width */
