@@ -76,6 +76,13 @@ CONTENT = [
         "category": "professional"
     },
     {
+        "what": "Лекция за dev.bg",
+        "when": "2022",
+        "where": "#TODO or not #TODO",
+        "link": "https://dev.bg/event/todo-or-not-todo-should-python-enhancement-proposal-350-have-been-accepted/",
+        "category": "professional"
+    },
+    {
         "what": "Лектор по Python",
         "when": "2022+",
         "where": "Курс по Python във ФМИ",
