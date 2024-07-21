@@ -6,11 +6,7 @@
     width: 10em;
 }
 
-#timeline_wrapper {
-    max-width: 40em;
-}
-
-#summary {
+.inner-width-limit {
     max-width: 40em;
 }
 

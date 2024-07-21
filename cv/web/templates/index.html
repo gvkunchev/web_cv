@@ -1,9 +1,11 @@
+{% load i18n %}
 {% load static %}
 {% load bootstrap_icons %}
+{% get_current_language as LANGUAGE_CODE %}
 <!DOCTYPE html>
 <html>
 <head>
-    <title>CV Георги Кунчев</title>
+    <title>{% translate "CV Georgi Kunchev" %}</title>
     <link rel="icon" href="{% static 'img/favicon.png' %}">
     {% load bootstrap5 %}
     {% bootstrap_css %}
@@ -24,11 +26,19 @@
     <meta property="og:image:height" content="224" />
 </head>
 <body class="p-1">
+    <div id="lang_selection" class="inner-width-limit text-end mx-auto small">
+        {% bs_icon 'translate' %}
+        {% if LANGUAGE_CODE == 'bg' %}
+            <a href="en" class="text-decoration-none text-dark">English</a>
+        {% else %}
+            <a href="bg" class="text-decoration-none text-dark">Български</a>
+        {% endif %}
+    </div>
     <div id="avatar_wrapper" class="text-center m-2">
         <img id="avatar" class="border border-dark rounded-circle shadow" src="{% static 'img/avatar.png' %}">
     </div>
     <h2 id="name" class="text-center">
-        Георги Викторов Кунчев
+        {% translate "Georgi Viktorov Kunchev" %}
     </h2>
     <h6 id="contacts" class="text-center">
         <span id="contacts_email">
@@ -46,47 +56,49 @@
             <a class="text-decoration-none text-dark" href="https://github.com/gvkunchev" target="_blank">gvkunchev@github</a>
         </span>
     </h6>
-    <div id="summary" class="text-center my-4 mx-auto">
-        <h5>Python Developer с почти 15 години професионален опит.</h5>
+    <div id="summary" class="inner-width-limit text-center my-4 mx-auto">
+        <h5>{% translate "Python Developer with almost 15 years of professional experience." %}</h5>
         <div>
             <ul class="text-start">
-                <li>Няколко самостоятелни Django проекта, най-големият от които е <a class="text-secondary" href="https://github.com/gvkunchev/shrubbery" target="_blank">сайтът за курс по Python във ФМИ</a></li>
-                <li>Няколко самостоятелни малки Flask проекта.</li>
-                <li>Опит с Django REST в контекста на семпло приложение.</li>
-                <li>Основни умения за конфигурация на Apache, Nginx, Gunicorn и комуникацията им с Django през WSGI.</li>
-                <li>Множество десктоп приложения с TKinter и няколко с PySide.</li>
-                <li>Асинхронни задачи със Celery.</li>
-                <li>Опит с PostgreSQL и SQLite.</li>
-                <li>Доста JavaScript (vanilla и jQuery) без претенции, че е идиоматичен. Ajax.</li>
-                <li>Linux shell scripting. PowerShell с помощ от Google.</li>
-                <li>Комфортна работа както в Linux, така и в Windows.</li>
-                <li>Обектно ориентирано програмиране, но не на всяка цена. Всяка парадигма да си знае гьола!</li>
-                <li>Time complexity мониторинг и оптимизация на алгоритми.</li>
-                <li>GitHub и бегъл опит със SVN и ClearCase.</li>
-                <li>PEP8, Pylint, Flake8, UnitTest, Coverage, Pyreverse, Swagger, UML са важни и трябва да се използват.</li>
-                <li>CI/CD чрез BitBucket + Jenkins, както и GitHub + GitHub Actions. Docker и малко Kubernetes.</li>
-                <li>Wheel, PyPi, Artifactory, RPM и други методи за дистрибуция на пакети.</li>
-                <li>Провеждане на вътрешнофирмени обучения и технически интервюта на нови кандидати.</li>
-                <li>IoT, роботика и микроконтролери като хоби.</li>
-                <li>Monty Python фен.</li>
-                <li>1700 ЕЛО на блиц и ~20 разновидности на кубчето на Рубик.</li>
+                {% blocktranslate %}
+                <li>Several personally developed Django projects, the biggest one of which is <a class="text-dark" href="https://github.com/gvkunchev/shrubbery" target="_blank">the website for the Python course at FMI.</a></li>
+                <li>Several personally developed, small Flask projects.</li>
+                <li>Experience with Django REST in the context of basic application.</li>
+                <li>Basic skills in configuring Apache, Nginx, Gunicorn and their communication with Django through WSGI.</li>
+                <li>Variety of desktop applications using TKinter and a couple using PySide.</li>
+                <li>Asynchronous tasks using Celery.</li>
+                <li>Experience with PostgreSQL and SQLite.</li>
+                <li>A lot of JavaScript (vanilla and jQuery) without claiming it is idiomatic. Ajax.</li>
+                <li>Linux shell scripting. PowerShell with some help from Google.</li>
+                <li>Comfortable in both Linux and Windows.</li>
+                <li>Object oriented programming, but not at any cost. Every paradigm should know its place!</li>
+                <li>Time complexity monitoring and algorithm optimization.</li>
+                <li>GitHub and very little experience with SVN and ClearCase.</li>
+                <li>PEP8, Pylint, Flake8, UnitTest, Coverage, Pyreverse, Swagger, UML are important and must be used.</li>
+                <li>CI/CD using BitBucket + Jenkins, as well as GitHub + GitHub Actions. Docker and a little Kubernetes.</li>
+                <li>Wheel, PyPi, Artifactory, RPM and other package distribution methods.</li>
+                <li>Conducting internal trainings and technical interviews with new employees.</li>
+                <li>IoT, robotics and microcontrollers as a hobby.</li>
+                <li>Monty Python fan.</li>
+                <li>1700 ELO in blitz and ~20 varieties of the Rubik's cube.</li>
+                {% endblocktranslate %}
             </ul>
         </div>
     </div>
 
     <div class="dropdown text-center m-2">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="category_selection" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span id="current_category">Всички категории</span>
+            <span id="current_category">{% translate "All categories" %}</span>
         </button>
         <div class="dropdown-menu" aria-labelledby="category_selection">
-            <a class="dropdown-item filter-trigger" href="#" onclick="return false" data-category="all">Всички категории</a>
-            <a class="dropdown-item filter-trigger" href="#" onclick="return false" data-category="personal">Лични</a>
-            <a class="dropdown-item filter-trigger" href="#" onclick="return false" data-category="professional">Професионални</a>
-            <a class="dropdown-item filter-trigger" href="#" onclick="return false" data-category="education">Образование</a>
+            <a class="dropdown-item filter-trigger" href="#" onclick="return false" data-category="all">{% translate "All categories" %}</a>
+            <a class="dropdown-item filter-trigger" href="#" onclick="return false" data-category="personal">{% translate "Personal" %}</a>
+            <a class="dropdown-item filter-trigger" href="#" onclick="return false" data-category="professional">{% translate "Professional" %}</a>
+            <a class="dropdown-item filter-trigger" href="#" onclick="return false" data-category="education">{% translate "Education" %}</a>
         </div>
     </div>
 
-    <div id="timeline_wrapper" class="mx-auto rounded shadow-lg position-relative bg-light">
+    <div id="timeline_wrapper" class="inner-width-limit mx-auto rounded shadow-lg position-relative bg-light">
         <div id="timeline" class="position-absolute bg-secondary rounded"></div>
         <div id="timeline_content" class="p-2">
             {% for item in content %}

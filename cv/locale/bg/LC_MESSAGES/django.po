@@ -1,0 +1,241 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-21 12:51+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: .\web\templates\index.html:8
+msgid "CV Georgi Kunchev"
+msgstr "CV Георги Кунчев"
+
+#: .\web\templates\index.html:41
+msgid "Georgi Viktorov Kunchev"
+msgstr "Георги Викторов Кунчев"
+
+#: .\web\templates\index.html:60
+msgid "Python Developer with almost 15 years of professional experience."
+msgstr "Python Developer с почти 15 години професионален опит."
+
+#: .\web\templates\index.html:63
+msgid ""
+"\n"
+"                <li>Several personally developed Django projects, the "
+"biggest one of which is <a class=\"text-dark\" href=\"https://github.com/"
+"gvkunchev/shrubbery\" target=\"_blank\">the website for the Python course at "
+"FMI.</a></li>\n"
+"                <li>Several personally developed, small Flask projects.</"
+"li>\n"
+"                <li>Experience with Django REST in the context of basic "
+"application.</li>\n"
+"                <li>Basic skills in configuring Apache, Nginx, Gunicorn and "
+"their communication with Django through WSGI.</li>\n"
+"                <li>Variety of desktop applications using TKinter and a "
+"couple using PySide.</li>\n"
+"                <li>Asynchronous tasks using Celery.</li>\n"
+"                <li>Experience with PostgreSQL and SQLite.</li>\n"
+"                <li>A lot of JavaScript (vanilla and jQuery) without "
+"claiming it is idiomatic. Ajax.</li>\n"
+"                <li>Linux shell scripting. PowerShell with some help from "
+"Google.</li>\n"
+"                <li>Comfortable in both Linux and Windows.</li>\n"
+"                <li>Object oriented programming, but not at any cost. Every "
+"paradigm should know its place!</li>\n"
+"                <li>Time complexity monitoring and algorithm optimization.</"
+"li>\n"
+"                <li>GitHub and very little experience with SVN and ClearCase."
+"</li>\n"
+"                <li>PEP8, Pylint, Flake8, UnitTest, Coverage, Pyreverse, "
+"Swagger, UML are important and must be used.</li>\n"
+"                <li>CI/CD using BitBucket + Jenkins, as well as GitHub + "
+"GitHub Actions. Docker and a little Kubernetes.</li>\n"
+"                <li>Wheel, PyPi, Artifactory, RPM and other package "
+"distribution methods.</li>\n"
+"                <li>Conducting internal trainings and technical interviews "
+"with new employees.</li>\n"
+"                <li>IoT, robotics and microcontrollers as a hobby.</li>\n"
+"                <li>Monty Python fan.</li>\n"
+"                <li>1700 ELO in blitz and ~20 varieties of the Rubik's cube."
+"</li>\n"
+"                "
+msgstr ""
+"\n"
+"                <li>Няколко самостоятелни Django проекта, най-големият от "
+"които е <a class=\"text-dark\" href=\"https://github.com/gvkunchev/shrubbery"
+"\" target=\"_blank\">сайтът за курс по Python във ФМИ</a></li>\n"
+"                <li>Няколко самостоятелни малки Flask проекта.</li>\n"
+"                <li>Опит с Django REST в контекста на семпло приложение.</"
+"li>\n"
+"                <li>Основни умения за конфигурация на Apache, Nginx, "
+"Gunicorn и комуникацията им с Django през WSGI.</li>\n"
+"                <li>Множество десктоп приложения с TKinter и няколко с "
+"PySide.</li>\n"
+"                <li>Асинхронни задачи със Celery.</li>\n"
+"                <li>Опит с PostgreSQL и SQLite.</li>\n"
+"                <li>Доста JavaScript (vanilla и jQuery) без претенции, че е "
+"идиоматичен. Ajax.</li>\n"
+"                <li>Linux shell scripting. PowerShell с помощ от Google.</"
+"li>\n"
+"                <li>Комфортна работа както в Linux, така и в Windows.</li>\n"
+"                <li>Обектно ориентирано програмиране, но не на всяка цена. "
+"Всяка парадигма да си знае гьола!</li>\n"
+"                <li>Time complexity мониторинг и оптимизация на алгоритми.</"
+"li>\n"
+"                <li>GitHub и бегъл опит със SVN и ClearCase.</li>\n"
+"                <li>PEP8, Pylint, Flake8, UnitTest, Coverage, Pyreverse, "
+"Swagger, UML са важни и трябва да се използват.</li>\n"
+"                <li>CI/CD чрез BitBucket + Jenkins, както и GitHub + GitHub "
+"Actions. Docker и малко Kubernetes.</li>\n"
+"                <li>Wheel, PyPi, Artifactory, RPM и други методи за "
+"дистрибуция на пакети.</li>\n"
+"                <li>Провеждане на вътрешнофирмени обучения и технически "
+"интервюта на нови кандидати.</li>\n"
+"                <li>IoT, роботика и микроконтролери като хоби.</li>\n"
+"                <li>Monty Python фен.</li>\n"
+"                <li>1700 ЕЛО на блиц и ~20 разновидности на кубчето на Рубик."
+"</li>\n"
+"                "
+
+#: .\web\templates\index.html:91 .\web\templates\index.html:94
+msgid "All categories"
+msgstr "Всички категории"
+
+#: .\web\templates\index.html:95
+msgid "Personal"
+msgstr "Лични"
+
+#: .\web\templates\index.html:96
+msgid "Professional"
+msgstr "Професионални"
+
+#: .\web\templates\index.html:97
+msgid "Education"
+msgstr "Образование"
+
+#: .\web\views.py:12
+msgid "Born"
+msgstr "Роден"
+
+#: .\web\views.py:13
+msgid "30 March 1990"
+msgstr "30 Март 1990"
+
+#: .\web\views.py:14
+msgid "Oriahovo"
+msgstr "Оряхово"
+
+#: .\web\views.py:19
+msgid "Primary Education"
+msgstr "Основно образование"
+
+#: .\web\views.py:21 .\web\views.py:28
+msgid "OU \"N. Y. Vaptsarov\"<br/>Selanovtsi"
+msgstr "ОУ \"Н. Й. Вапцаров\"<br/>с. Селановци"
+
+#: .\web\views.py:26
+msgid ""
+"The only one with 6.00 at the high school candidate exam in Mathematics for "
+"the administrative area"
+msgstr ""
+"Единственият с резултат 6.00 на кандидат-гимназисткия изпит по математика за "
+"областта"
+
+#: .\web\views.py:33
+msgid "Third place at a national mathematics competition"
+msgstr "Трето място на национално състезание по математика"
+
+#: .\web\views.py:35 .\web\views.py:42
+msgid ""
+"Natural Science and Mathematical School \"Akademik Ivan Tsenov\"<br/>Vratza"
+msgstr "ПМГ \"Академик Иван Ценов\"<br/>гр. Враца"
+
+#: .\web\views.py:40
+msgid "Secondary education"
+msgstr "Средно образование"
+
+#: .\web\views.py:47
+msgid "Tertiary education<br/> (dropped)<br/>/Software engineering/"
+msgstr "Висше образование<br/>(прекъснал)<br/>/Софтуерно инженерство/"
+
+#: .\web\views.py:49
+msgid ""
+"Faculty of mathematics and Informatics, Sofia University \"St. Kliment "
+"Ohridski\""
+msgstr "ФМИ към СУ \"Св. Климент Охридски\"<br/>гр. София"
+
+#: .\web\views.py:54
+msgid ""
+"Developer of marketing research surveys<br/><i class='small'>(Python, HTML, "
+"CSS, JavaScript, Flash)</i>"
+msgstr ""
+"Програмист маркетингови проучвания<br/><i class='small'>(Python, HTML, CSS, "
+"JavaScript, Flash)</i>"
+
+#: .\web\views.py:56 .\web\views.py:63
+msgid "\"Bright Marketing Research\"<br/>Sofia"
+msgstr "\"Брайт Маркетинг Рисърч\"<br/>гр. София"
+
+#: .\web\views.py:61
+msgid "Awarded with an MVP prize by the company"
+msgstr "Получава приз MVP на фирмата"
+
+#: .\web\views.py:68
+msgid "Becomes a proud father of Victoria"
+msgstr "Става горд баща на Виктория"
+
+#: .\web\views.py:70
+msgid "\"Mother's Home\" Hospital<br/>Sofia"
+msgstr "Болница \"Майчин дом\"<br/>гр. София"
+
+#: .\web\views.py:75
+msgid ""
+"Senior Python Developer<br/>&<br/>Tech Lead<br/><i class='small'>(Python, "
+"Django, CI/CD with Jenkins and GitHub Actions)</i>"
+msgstr ""
+"Senior Python Developer<br/>&<br/>Tech Lead<br/><i class='small'>(Python, "
+"Django, CI/CD с Jenkins и GitHub Actions)</i>"
+
+#: .\web\views.py:77
+msgid "\"Strypes\"<br/>Sofia"
+msgstr "\"Страйпс\"<br/>гр. София"
+
+#: .\web\views.py:82
+msgid "Lecture for dev.bg"
+msgstr "Лекция за dev.bg"
+
+#: .\web\views.py:89
+msgid "Python Lecturer"
+msgstr "Лектор по Python"
+
+#: .\web\views.py:91
+msgid "Python course at FMI"
+msgstr "Курс по Python във ФМИ"
+
+#: .\web\views.py:96
+msgid ""
+"Creates the website for the Python course at FMI<br/><i "
+"class='small'>(Python, Django, jQuery, Bootstrap, PostgreSQL, Celery, "
+"Docker)</i>"
+msgstr ""
+"Създава сайт за курса по Python във ФМИ<br/><i class='small'>(Python, "
+"Django, jQuery, Bootstrap, PostgreSQL, Celery, Docker)</i>"
+
+#: .\web\views.py:98 .\web\views.py:105
+msgid "The project at GitHub"
+msgstr "Проектът в GitHub"
+
+#: .\web\views.py:103
+msgid "Creates the current CV"
+msgstr "Създава текущото CV"

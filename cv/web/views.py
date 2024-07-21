@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from django.utils.translation import gettext_lazy as _
+from django.utils.translation import activate
+
 
 
 # A database storage for this sounds perfect, but
@@ -6,106 +9,114 @@ from django.shortcuts import render
 # so I'm just defining these inline.
 CONTENT = [
     {
-        "what": "Роден",
-        "when": "30 Март 1990",
-        "where": "гр. Оряхово",
+        "what": _("Born"),
+        "when": _("30 March 1990"),
+        "where": _("Oriahovo"),
         "link": "https://www.oriahovo.bg/",
         "category": "personal"
     },
     {
-        "what": "Основно образование",
+        "what": _("Primary Education"),
         "when": "2004",
-        "where": "ОУ \"Н. Й. Вапцаров\" Селановци",
+        "where": _("OU \"N. Y. Vaptsarov\"<br/>Selanovtsi"),
         "link": "https://ouvaptsarov-selanovtsi.info/",
         "category": "education"
     },
     {
-        "what": "Единственият с резултат 6.00 на кандидат-гимназисткия изпит по математика за областта",
+        "what": _("The only one with 6.00 at the high school candidate exam in Mathematics for the administrative area"),
         "when": "2004",
-        "where": "ОУ \"Н. Й. Вапцаров\" Селановци",
+        "where": _("OU \"N. Y. Vaptsarov\"<br/>Selanovtsi"),
         "link": "https://ouvaptsarov-selanovtsi.info/",
         "category": "education"
     },
     {
-        "what": "Трето място на национално състезание по математика",
+        "what": _("Third place at a national mathematics competition"),
         "when": "2005",
-        "where": "ПМГ \"Академик Иван Ценов\" гр.Враца",
+        "where": _("Natural Science and Mathematical School \"Akademik Ivan Tsenov\"<br/>Vratza"),
         "link": "https://pmg-vratsa.org/",
         "category": "education"
     },
     {
-        "what": "Средно образование",
+        "what": _("Secondary education"),
         "when": "2009",
-        "where": "ПМГ \"Академик Иван Ценов\" гр.Враца",
+        "where": _("Natural Science and Mathematical School \"Akademik Ivan Tsenov\"<br/>Vratza"),
         "link": "https://pmg-vratsa.org/",
         "category": "education"
     },
     {
-        "what": "Висше образование<br/> (прекъснал)<br/>/Софтуерно инженерство/",
+        "what": _("Tertiary education<br/> (dropped)<br/>/Software engineering/"),
         "when": "2009-2011",
-        "where": "ФМИ към<br/> СУ \"Св. Климент Охридски\"<br/> София",
+        "where": _("Faculty of mathematics and Informatics, Sofia University \"St. Kliment Ohridski\""),
         "link": "https://www.fmi.uni-sofia.bg/",
         "category": "education"
     },
     {
-        "what": "Програмист маркетингови проучвания<br/><i class='small'>(Python, HTML, CSS, JavaScript, Flash)</i>",
+        "what": _("Developer of marketing research surveys<br/><i class='small'>(Python, HTML, CSS, JavaScript, Flash)</i>"),
         "when": "2010-2020",
-        "where": "\"Брайт Маркетинг Рисърч\" София",
+        "where": _("\"Bright Marketing Research\"<br/>Sofia"),
         "link": "https://bright-research.com/",
         "category": "professional"
     },
     {
-        "what": "Получава приз MVP на фирмата",
+        "what": _("Awarded with an MVP prize by the company"),
         "when": "2012",
-        "where": "\"Брайт Маркетинг Рисърч\" София",
+        "where": _("\"Bright Marketing Research\"<br/>Sofia"),
         "link": "https://bright-research.com/",
         "category": "professional"
     },
     {
-        "what": "Става горд баща на Виктория",
+        "what": _("Becomes a proud father of Victoria"),
         "when": "2018",
-        "where": "Болница \"Майчин дом\" София",
+        "where": _("\"Mother's Home\" Hospital<br/>Sofia"),
         "link": "https://maichindom.com/",
         "category": "personal"
     },
     {
-        "what": "Senior Python Developer<br/>&<br/>Tech Lead<br/><i class='small'>(Python, Django, CI/CD with Jenkins and GitHub Actions)</i>",
+        "what": _("Senior Python Developer<br/>&<br/>Tech Lead<br/><i class='small'>(Python, Django, CI/CD with Jenkins and GitHub Actions)</i>"),
         "when": "2020+",
-        "where": "\"Страйпс\" София",
+        "where": _("\"Strypes\"<br/>Sofia"),
         "link": "https://strypes.eu/",
         "category": "professional"
     },
     {
-        "what": "Лекция за dev.bg",
+        "what": _("Lecture for dev.bg"),
         "when": "2022",
         "where": "#TODO or not #TODO",
         "link": "https://dev.bg/event/todo-or-not-todo-should-python-enhancement-proposal-350-have-been-accepted/",
         "category": "professional"
     },
     {
-        "what": "Лектор по Python",
+        "what": _("Python Lecturer"),
         "when": "2022+",
-        "where": "Курс по Python във ФМИ",
+        "where": _("Python course at FMI"),
         "link": "https://py-fmi.org/",
         "category": "professional"
     },
     {
-        "what": "Създава сайт за курса по Python във ФМИ<br/><i class='small'>(Python, Django, jQuery, Bootstrap, PostgreSQL, Celery, Docker)</i>",
+        "what": _("Creates the website for the Python course at FMI<br/><i class='small'>(Python, Django, jQuery, Bootstrap, PostgreSQL, Celery, Docker)</i>"),
         "when": "2023",
-        "where": "Проектът в GitHub",
+        "where": _("The project at GitHub"),
         "link": "https://github.com/gvkunchev/shrubbery",
         "category": "professional"
     },
     {
-        "what": "Създава текущото CV",
+        "what": _("Creates the current CV"),
         "when": "2024",
-        "where": "Проектът в GitHub",
+        "where": _("The project at GitHub"),
         "link": "https://github.com/gvkunchev/web_cv",
         "category": "personal"
     },
 ]
 
+# Not appropriate translation approach for a fully-fledged project.
+# This is simple one-pager so keep it simple and save time to spend with the family
 
-def index(request):
-    """Index view."""
+def index_bg(request):
+    """Index bg view."""
+    activate('bg')
+    return render(request, 'index.html', {'content': CONTENT})
+
+def index_en(request):
+    """Index en view."""
+    activate('en-us')
     return render(request, 'index.html', {'content': CONTENT})
