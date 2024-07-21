@@ -7,6 +7,7 @@ RUN apt install -y python3-pip
 RUN apt install -y apache2
 RUN apt install -y apache2-utils
 RUN apt install -y libapache2-mod-wsgi-py3
+RUN apt install -y gettext
 
 # Install all python packages
 COPY requirements.txt .
