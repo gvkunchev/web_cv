@@ -48,3 +48,13 @@
     vertical-align: top;
     width: 43%;
 }
+
+.dropdown-item:active {
+    /* TODO: 
+       These colors are defined in Bootstrap.
+       Better approach is to use SCSS
+       and use Bootstrap's variables.
+    */
+    color: white !important;
+    background-color: #6c757d !important;
+}
