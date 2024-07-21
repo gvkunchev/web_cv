@@ -4,6 +4,7 @@
 
 #avatar {
     width: 10em;
+    filter: grayscale(1);
 }
 
 .inner-width-limit {

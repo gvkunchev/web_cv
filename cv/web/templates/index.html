@@ -35,7 +35,9 @@
         {% endif %}
     </div>
     <div id="avatar_wrapper" class="text-center m-2">
-        <img id="avatar" class="border border-dark rounded-circle shadow" src="{% static 'img/avatar.png' %}">
+        <a href="{% static 'img/avatar.png' %}" target="_blank">
+            <img id="avatar" class="border border-dark rounded-circle shadow" src="{% static 'img/avatar.png' %}">
+        </a>
     </div>
     <h2 id="name" class="text-center">
         {% translate "Georgi Viktorov Kunchev" %}
