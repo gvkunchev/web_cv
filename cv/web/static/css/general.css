@@ -44,6 +44,8 @@
     display: table-cell;
     vertical-align: top;
     width: 43%;
+    word-break: break-word;
+    font-size: 85%;
 }
 
 .dropdown-item:active {
